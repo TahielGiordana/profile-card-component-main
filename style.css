@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    background-color: #149EAF;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: -100% 150%, 175% -100%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.content-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container{
+    border-radius: 20px;
+    background-image: url(images/bg-pattern-card.svg);
+    box-shadow: 0 0 20px 10px #0002;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    box-shadow: 0 -14em #fff inset;
+    padding-top: 100px;
+}
+
+.profile-picture-container{
+    width: fit-content;
+    border-radius: 50%;
+    border: 5px solid #fff;  
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-info-container{
+    text-align: center;
+    line-height: .5;
+    padding: 10px 100px;
+}
+
+.profile-info-name{
+    font-weight: 700;
+    color: #222;
+    font-size: 20px;
+}
+
+.gray-text{
+    color: #777;
+    font-weight: 500;
+}
+
+.profile-info-city{
+    color: #555;
+    font-size: 14px;
+}
+
+.profile-numbers-container{
+    color: #222;
+    text-align: center;
+    display: flex;
+    line-height: .8;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    justify-content:space-evenly;
+}
+
+.profile-numbers-text{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.profile-numbers-text span{
+    color: #777;
+    font-size: 10px;
+}
+
+/*Responsive Desing*/
+@media screen and (max-width: 768px){
+    body{
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-position: 150% 125%, -20% -50%;
+        background-repeat: no-repeat, no-repeat;
+
+    }
+}
